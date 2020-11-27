@@ -1,11 +1,82 @@
 module.exports = {
   someSidebar: {
-    Docusaurus: [
-      'doc1',
-      'doc2',
-      'doc3',
-      {Group: ['group/group']}
+    "Chat": [
+      {
+        "IOS": [
+          {
+            "Getting Started": [
+              'doc2',
+              'ioscreatechannel',
+              'doc4'
+            ]
+          },
+          {
+            "Guides": [
+              'iosguides',
+              'iosapp',
+              'ioschan',
+              
+'iospub',
+              'iosprivate',
+              'iosdir',
+              'iosuserr',
+              'iosuserole'
+              
+
+           
+            ]
+          },
+         
+          
+        ]
+      },
+      {
+        "Android": [
+          {
+            "Getting Started": [
+              'getingst',
+              'createchandro',
+              'Send Message'
+           
+            ]
+          },
+          {
+            "Guides": [
+              'androauth',
+              'adroapplication',
+              'androidchan',
+              'androidusers',
+              'androidpublic',
+              'androidprivate',
+              'androiddirect',
+              
+           ],
+
+           
+          },
+        ]
+      },
+      {"Platform API": [
+        'apigetst',
+      {'Guides': [
+        'apichannels',
+        'apiusers',
+        'apirlimits',
+        'upload',
+        'apidownlaodfile',
+        'apidel',
+        'apierr',
+        'gettingstarted'
+
+      ]
+    }
+  ],
+        
+      }
     ],
-    Features: ['mdx'],
+ 
+
+    UIKIT: ['mdx'],
   },
 };
+  

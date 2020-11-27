@@ -1,5 +1,5 @@
 ---
-id: group
+id: Guide
 title: Group Guide
 sidebar_label: Group Guide
 slug: /group
