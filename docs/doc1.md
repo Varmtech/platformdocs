@@ -1,13 +1,30 @@
 ---
-id: doc1
-title: Style Guide
-sidebar_label: Style Guide
+id: gettingstarted
+title: no name
+sidebar_label: " styling"
 slug: /
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
-## Markdown Syntax
+### Get it
+
+**Platform API** consists of different types of data resources related to chat activities. It allows you to directly interact with these resources.
+Chat API is REST-based, it uses standard HTTP protocols and returns JSON payloads in response to HTTPS requests. Chat API allows to comfortably customize the chat features and services from the server side. 
+
+|Header1 |Header2  | Header3|
+--- | --- | ---
+|data1|data2|data3|
+|data11|data12|data13|
+
+
+|Parameter name |Type  | Description|
+--- | --- | ---
+|name|string|indicates the name of created application.|
+|public key|string|public key is used for signing the JTW API token|
+
+
+
 
 To serve as an example page when styling markdown based Docusaurus sites.
 
