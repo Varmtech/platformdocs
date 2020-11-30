@@ -51,10 +51,8 @@ module.exports = {
       {'Guides': [
         'apichannels',
         'apiusers',
+        'apifiles',
         'apirlimits',
-        'upload',
-        'apidownlaodfile',
-        'apidel',
         'apierr',
         'gettingstarted'
 
