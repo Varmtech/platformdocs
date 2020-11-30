@@ -5,9 +5,9 @@ title: Authentication
 
 
 
-Authentication is the validation of the user’s identity. It verifies that the user who tries to access the application is the person who he/she claims to be. 
+Authentication is the validation of the user’s identity. It verifies that the users who tring to access the application are in fact who he/she claims to be. 
 
-In this guide, you will learn about the user authentication process and how to issue a JWT token. JWT token contains the encrypted credentials of the user. It helps to authenticate and validate the user to access your application.
+In this guide, you will learn about the user authentication process and how to issue a JWT token. JWT token contains the encrypted credentials of the user. It helps to authenticate the user and autherizes access to your application.
 
 
 ## Create Access Token ##
