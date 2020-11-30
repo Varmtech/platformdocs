@@ -336,6 +336,11 @@ docItemWrapper_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem- {
 
 .docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- .container .row .col.col--3 {
   --ifm-col-width: 285px;
+  min-width: 285px;
+}
+
+.table-of-contents, .table-of-contents__left-border {
+  min-width: 285px;
 }
 
 @media (max-width: 1320px) and (min-width: 997px) {
@@ -383,14 +388,18 @@ docItemWrapper_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem- {
 }
 
 @media (max-width: 1136px) {
-  .row .col.col.col {
-    flex-basis: var(--ifm-col-width);
-    margin-left: 0;
-  }
+  /*.row .col.col.col {*/
+  /*  flex-basis: var(--ifm-col-width);*/
+  /*  margin-left: 0;*/
+  /*}*/
 
-  .menu--responsive .menu__button {
-    display: inherit;
-  }
+  /*.menu--responsive .menu__button {*/
+  /*  display: inherit;*/
+  /*}*/
+}
+
+.menu--show {
+  top: 60px;
 }
 
 .main-wrapper {
@@ -449,4 +458,8 @@ table tbody tr td {
   font-size: 16px;
   line-height: 28px;
   color: #383B51;
+}
+
+.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- {
+  min-width: 240px;
 }
