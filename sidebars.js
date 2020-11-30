@@ -15,19 +15,13 @@ module.exports = {
               'iosguides',
               'iosapp',
               'ioschan',
-              
-'iospub',
+              'iospub',
               'iosprivate',
               'iosdir',
               'iosuserr',
               'iosuserole'
-              
-
-           
             ]
           },
-         
-          
         ]
       },
       {
@@ -37,7 +31,6 @@ module.exports = {
               'getingst',
               'createchandro',
               'Send Message'
-           
             ]
           },
           {
@@ -49,10 +42,7 @@ module.exports = {
               'androidpublic',
               'androidprivate',
               'androiddirect',
-              
            ],
-
-           
           },
         ]
       },
@@ -71,12 +61,12 @@ module.exports = {
       ]
     }
   ],
-        
+
       }
     ],
- 
+
 
     UIKIT: ['mdx'],
   },
 };
-  
+

@@ -26,6 +26,10 @@
 /*  display: none!important;*/
 /*}*/
 
+* {
+  font-family: Roboto, sans-serif;
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
@@ -40,7 +44,6 @@
 }
 
 .navbar__link, .navbar__link:hover {
-  font-family: Roboto, sans-serif;
   font-style: italic;
   font-weight: normal;
   font-size: 15px;
@@ -66,7 +69,6 @@
 }
 
 .headerText {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -78,7 +80,6 @@
 .aboutText {
   display: flex;
   word-break: break-word;
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -94,7 +95,6 @@
   width: 187px;
   height: 56px;
 
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -125,7 +125,6 @@
 }
 
 .mainHeaderDesc {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -139,7 +138,6 @@
 }
 
 .navbar__item .navbar__link {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -195,7 +193,6 @@
 }
 
 .cardDesc {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -228,7 +225,6 @@
 }
 
 .subHeaderText {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -242,7 +238,6 @@
 }
 
 .menu__link {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -260,7 +255,6 @@
 }
 
 .table-of-contents__link {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -285,7 +279,6 @@
 }
 
 .menu__link--sublist {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -293,3 +286,145 @@
   color: #1F233C;
 }
 
+.menu__link--sublist:after {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.49805 1.49951L5.99805 5.49951L10.498 1.49951' stroke='%23383B51' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-size: auto;
+  background-repeat: no-repeat;
+  transform: none;
+}
+
+.menu__list-item--collapsed .menu__link--sublist:after {
+  transform: rotateZ(-90deg);
+}
+
+.navbar-sidebar__brand {
+  background: #060A26;
+  height: 70px;
+  padding: 18px 32px;
+}
+
+docItemWrapper_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem- {
+  max-width: 100%!important;
+}
+
+.docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- {
+  flex-grow: unset!important;
+  width: 100%;
+}
+
+.docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- .container {
+  margin: 0;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- .container .row {
+  flex-wrap: nowrap;
+}
+
+.docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- .container .row .col:nth-of-type(1) {
+  padding: 0 56px;
+  max-width: 100%!important;
+}
+
+.docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- .container .row .col:nth-of-type(2) {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 285px;
+}
+
+.docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- .container .row .col.col--3 {
+  --ifm-col-width: 285px;
+}
+
+@media (max-width: 1320px) and (min-width: 997px) {
+  .docItemWrapper_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem- {
+    max-width: 100%!important;
+  }
+}
+
+.navbar__items--right .DocSearch-Button {
+  width: 218px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  box-shadow: none;
+}
+
+.navbar__items--right .DocSearch-Button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: none;
+}
+
+.navbar__items--right .DocSearch-Button:after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.7431 12.5741L9.91009 8.73956C10.5972 7.80246 10.9652 6.66953 10.9601 5.50756C10.947 2.47441 8.49372 0.0175744 5.46059 5.57178e-05C4.00907 -0.00651157 2.61522 0.567712 1.58953 1.59481C0.563845 2.6219 -0.00846493 4.01655 9.46502e-05 5.46806C0.0132044 8.50148 2.4667 10.9585 5.50009 10.9761C6.6668 10.9811 7.80387 10.6088 8.74159 9.91456L8.74559 9.91156L12.5751 13.7431C12.7821 13.9603 13.0907 14.0482 13.3811 13.9728C13.6716 13.8973 13.8983 13.6704 13.9735 13.3799C14.0487 13.0894 13.9605 12.7809 13.7431 12.5741ZM5.49609 9.87806C3.06951 9.8641 1.10675 7.89866 1.09609 5.47206C1.08955 4.311 1.54743 3.19551 2.36783 2.37389C3.18822 1.55228 4.30303 1.09273 5.46409 1.09756C7.89068 1.11151 9.85344 3.07695 9.86409 5.50356C9.87064 6.66461 9.41276 7.78011 8.59236 8.60172C7.77197 9.42334 6.65716 9.88288 5.49609 9.87806Z' fill='white'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 14px;
+}
+
+.navbar__items--right .DocSearch-Button .DocSearch-Button-Key, .DocSearch-Search-Icon {
+  display: none;
+}
+
+.navbar__items--right .DocSearch-Button .DocSearch-Button-Placeholder {
+  padding-left: 38px;
+}
+
+@media (max-width: 1136px) {
+  .row .col.col.col {
+    flex-basis: var(--ifm-col-width);
+    margin-left: 0;
+  }
+
+  .menu--responsive .menu__button {
+    display: inherit;
+  }
+}
+
+.main-wrapper {
+  overflow-x: hidden;
+}
+
+@media (min-width: 997px) {
+  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- .sidebar_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar- {
+    padding-top: 0;
+  }
+}
+
+.col .tableOfContents_node_modules-\@docusaurus-theme-classic-lib-theme-TOC- {
+  top: 0;
+}
+
+.docPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- {
+  margin-top: 0;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px!important;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  color: #1F233C;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px!important;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  color: #1F233C;
+}

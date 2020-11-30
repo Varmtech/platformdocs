@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
@@ -38,23 +38,6 @@ module.exports = {
         },
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: '© 2020 Sceyt, inc.',
-          items: [],
-        },
-        {
-          title: 'Privacy policy',
-          items: []
-        },
-        {
-          title: 'Privacy policy',
-          items: []
-        }
-      ],
-    },
     algolia: {
       apiKey: '25626fae796133dc1e734c6bcaaeac3c',
       indexName: 'docsearch',
@@ -82,6 +65,6 @@ module.exports = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       },
-    ],
+    ]
   ],
 }
