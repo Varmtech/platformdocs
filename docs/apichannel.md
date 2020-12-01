@@ -17,15 +17,15 @@ There are three types of channels:
 
 |Action| Type |HTTP Request|
 |---|:---:|---|
-|Create Channel|POST|`https://{{apiUrl}}/v1/{{appId}}/public-channels`|
-|Add Channel Members|POST|`https://{{apiUrl}}/v1/{{appId}}/channels`|
-|Remove Channel Members|DELETE|`https://{{apiUrl}}/v1/{{appId}}/channels`|
-|Update Channel |PUT|`https://{{apiUrl}}/v1/{{appId}}/channels`|
-|Get Channel|GET|`https://{{apiUrl}}/v1/{{appId}}/channels/`|
-|Get Channels|GET|`https//{{apiUrl}}/v1/{{appId}}/channelD/channels`|
-|Get Channel Members|GET|`https://{{apiUrl}}/v1/{{appId}}/channels/`|
-|Get Channel Messages|GET|`https://{{apiUrl}}/v1/{{appId}}/channels/channelID/messages`|
-|Delete Channel|DELETE|`https://{{apiUrl}}/v1/{{appId}}/channels/channelID`|
+|Create Channel|POST|**https://{{apiUrl}}/v1/{{appId}}/public-channels**|
+|Add Channel Members|POST|**https://{{apiUrl}}/v1/{{appId}}/channels**|
+|Remove Channel Members|DELETE|**https://{{apiUrl}}/v1/{{appId}}/channels**|
+|Update Channel |PUT|**https://{{apiUrl}}/v1/{{appId}}/channels**|
+|Get Channel|GET|**https://{{apiUrl}}/v1/{{appId}}/channels/**|
+|Get Channels|GET|**https//{{apiUrl}}/v1/{{appId}}/channelD/channels**|
+|Get Channel Members|GET|**https://{{apiUrl}}/v1/{{appId}}/channels/**|
+|Get Channel Messages|GET|**https://{{apiUrl}}/v1/{{appId}}/channels/channelID/messages**|
+|Delete Channel|DELETE|**https://{{apiUrl}}/v1/{{appId}}/channels/channelID**|
 
 ### Channels Properties ###
 
@@ -48,9 +48,9 @@ Create a new channel.
 
 ### HTTP Request ###
 
-``
+```
 https:/{{apiUrl}}/v1/channels-public
-``
+```
 
 ### Parameters ###
 
@@ -102,9 +102,9 @@ You can add one or multiple members to a channel. Include the channel ID in the 
 
 ### HTTP Request ###
 
-``
+```
 https://{{apiUrl}}/v1/channels/channelID/users
-``
+```
 
 ### Parameters ###
 
@@ -141,9 +141,9 @@ This API request allows to remove a member from a channel.
 
 ### HTTP Request ###
 
-``
+```
 https://{{apiUrl}}/v1/channels/ChannelID/users
-``
+```
 
 ### Parameters ###
 <p>
@@ -183,9 +183,9 @@ You can update the channel's subject, change type, and other parameters. Include
 
 
 ### HTTP Request ###
-``
+```
 https://{{apiUrl}}/v1/channels
-``
+```
 ### Parameters ###
 
 </p>
@@ -209,7 +209,9 @@ To get the channel include the channel id in the request Url.
 
 ### HTTP Request ###
 
-{{apiUrl}}/v1/{{appId}}/channels/channelID
+```
+https://{{apiUrl}}/v1/{{appId}}/channels/channelID
+```
 
 ### Respone ###
 ```
@@ -246,12 +248,12 @@ You can also set filters to request some channels with the following filters.
 
 |Filter|Description|Example|
 |---|---|---|
-|eq|equals|https://{{apiUrl}}/v1/{{appId}}/channels?filter=type:eq:public|
-|not_eq|not equal|https://{{apiUrl}}/v1/{{appId}}/channels?filter=type:not_eq:private|
-|contains|contains a certain character|https://{{apiUrl}}/v1/{{appId}}/channels?filter=uri:contains:14|
-|begins |begins with a certain character|https://{{apiUrl}}/v1/{{appId}}/channels?filter=subject:begins:23|
-|ends|ends with a certain character|https://{{apiUrl}}/v1/{{appId}}/channels?filter=label:ends:56|
-|in|including, used for getting channels with multupile filters|{{apiUrl}}/v1/{{appId}}/channels?filter=type:in:private&public|
+|eq|equals|**https://{{apiUrl}}/v1/{{appId}}/channels?filter=type:eq:public**|
+|not_eq|not equal|**https://{{apiUrl}}/v1/{{appId}}/channels?filter=type:not_eq:private**|
+|contains|contains a certain character|**https://{{apiUrl}}/v1/{{appId}}/channels?filter=uri:contains:14**|
+|begins |begins with a certain character|**https://{{apiUrl}}/v1/{{appId}}/channels?filter=subject:begins:23**|
+|ends|ends with a certain character|**https://{{apiUrl}}/v1/{{appId}}/channels?filter=label:ends:56**|
+|in|including, used for getting channels with multupile filters|**https://{{apiUrl}}/v1/{{appId}}/channels?filter=type:in:private&public**|
 
 
 ### Get Channels by Uri ###
@@ -281,9 +283,8 @@ Add the following endpoint to the base Url.
 
 
 ### HTTP Request ###
-``
-https://{{apiUrl}}/v1/{{appId}}/appID/channels
-``
+
+```https://{{apiUrl}}/v1/{{appId}}/appID/channels```
 
 ### Response ###
 ```
@@ -310,7 +311,7 @@ Use this API request to view all the members of a specific channel.
 
 ### HTTP Request ###
 
-{{apiUrl}}/v1/{{appId}}/channels/channelID/users
+```https://{{apiUrl}}/v1/{{appId}}/channels/channelID/users```
 
 ### Response ###
 
@@ -335,7 +336,7 @@ This API request retrieves all the messages from a specific channel.
 
 ### HTTP Request ###
 
-https://{{apiUrl}}/v1/{{appId}}/channels/channelID/messages
+```https://{{apiUrl}}/v1/{{appId}}/channels/channelID/messages```
 
 ### Respone ###
 

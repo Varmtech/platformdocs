@@ -8,12 +8,12 @@ Users can chat with each other through chat channels. Each user must have a uniq
 
 |Action |Type  | HTTP REQUEST|
 --- | --- | ---
-|Create User|POST|``https://{{apiUrl}}/v1/users``|
-|Get User|GET|``https://{{apiUrl}}/v1/users/``|
-|Get Users|GET|``https://{{apiUrl}}/v1/{{appId}}/users``|
-|Update User|PUT|``https://{{apiUrl}}/v1/{{appId}}/users/``|
-|Get Users with Presense|GET|``https://{{apiUrl}}/v1/{{appId}}/users``|
-|Delete User|DELETE|``https://{{apiUrl}}/v1/{{appId}}/users/``|
+|Create User|POST|**https://{{apiUrl}}/v1/users**|
+|Get User|GET|**https://{{apiUrl}}/v1/users/**|
+|Get Users|GET|**https://{{apiUrl}}/v1/{{appId}}/users**|
+|Update User|PUT|**https://{{apiUrl}}/v1/{{appId}}/users/**|
+|Get Users with Presense|GET|**https://{{apiUrl}}/v1/{{appId}}/users**|
+|Delete User|DELETE|**https://{{apiUrl}}/v1/{{appId}}/users/**|
 
 ### Users Properties ###
 
@@ -34,9 +34,7 @@ With this request you can create a new user.
 
 ### HTTP Request ###
 
-`
-https://{{apiUrl}}/v1/{{appId}}/users
-`
+```https://{{apiUrl}}/v1/{{appId}}/users```
 
 ### Parameters ###
 
@@ -66,9 +64,7 @@ https://{{apiUrl}}/v1/{{appId}}/users
 You can retrieve information about a specific user from a specific chat channel using their unique user name
 
 ### HTTTP Request ###
-`
-https://{{apiUrl}}/v1/{{appId}}/users/
-`
+```https://{{apiUrl}}/v1/{{appId}}/users/```
 ### Response ###
 
 ```
@@ -91,9 +87,7 @@ You can view information from multiple users.
 
 
 ### HTTP Request ###
-`
-https://{{apiUrl}}/v1/{{appId}}/users
-`
+```https://{{apiUrl}}/v1/{{appId}}/users```
 ### Respone ###
 
 
@@ -118,9 +112,7 @@ This request allows you to see when the users were last active and their current
 
 ### HTTP Request ###
 
-``
-https://{{apiUrl}}/v1/{{appId}}/users
-``
+```https://{{apiUrl}}/v1/{{appId}}/users```
 
 ### Respone ###
 
@@ -145,7 +137,5 @@ https://{{apiUrl}}/v1/{{appId}}/users
 Use this request to permanently delete a user from the user.
 
 ### HTTP Request ###
-``
-https://{{apiUrl}}/v1/{{appId}}/users/usename?
-``
+```https://{{apiUrl}}/v1/{{appId}}/users/usename?```
 
