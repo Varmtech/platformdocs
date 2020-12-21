@@ -1,6 +1,7 @@
 ---
 id: doc2
 title: Install Chat SDK 
+slug: /
 
 ---
 

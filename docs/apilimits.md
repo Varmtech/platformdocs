@@ -4,11 +4,11 @@ title: Rate Limits
 ---
 
 
-To provide the  appropriate chat service for all SCEYT accounts we limit the number of (error number).‘ 
+To provide the  appropriate chat service for all SCEYT accounts, we limit the number of (error number).‘ 
 
 ## Plan-based limits ##
 
-Limited depend on the number of Monthly active users (MAU) of the application which is based on the plan (membership) you chose 
+Limitations depend on the number of monthly active users (MAU) of the application, which is based on the plan (membership) you chose.
 
 |Action|Plan  | MAU|
 --- | --- | ---

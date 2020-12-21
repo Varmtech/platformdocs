@@ -43,23 +43,29 @@ module.exports = {
               'androidprivate',
               'androiddirect',
            ],
-          },
+          }
         ]
       },
-      {"Platform API": [
-        'apigetst',
-      {'Guides': [
-        'apichannels',
-        'apiusers',
-        'apifiles',
-        'apirlimits',
-        'apierr',
-        'gettingstarted'
-
-      ]
-    }
-  ],
-
+          {
+            "Tutorials": [
+              'role', 
+              'webhook'
+            ] 
+          },
+      {
+        "Platform API": [
+          'apigetst',
+          {
+            'Guides': [
+                'apichannels',
+                'apiusers',
+                'apifiles',
+                'apirlimits',
+                'apierr'
+                // 'gettingstarted'
+            ]
+          }
+        ],
       }
     ],
 

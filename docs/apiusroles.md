@@ -51,7 +51,7 @@ Create a new custom role.
 
 ## Get Role ##
 
-Retrieve a role by placing the role ID in the API request. The ID will be gnereated automaticcly when creating the role.
+Retrieve a role by placing the role ID in the API request. The ID will be generated automatically when creating a role.
 
 ### HTTP Requests ###
 
@@ -76,7 +76,7 @@ Retrieve a role by placing the role ID in the API request. The ID will be gnerea
 
 List all roles
 
-With this API you can retrieve all roles in a specific application
+With this API, you can retrieve all roles in a specific application.
 
 ### HTTP Request ###
 
@@ -132,7 +132,7 @@ With this API you can retrieve all roles in a specific application
 
 ## Delete Role ##
 
-Permently delete a specific role. PLace the role ID in the request URL.
+Permanently delete a specific role. Place the role ID in the request URL.
 
 ### HTTP Request ###
 
