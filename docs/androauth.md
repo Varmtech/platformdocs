@@ -17,7 +17,7 @@ The access token must be created in your backend and signed using your private k
 <ol>
 <p>
 <li>
-In your dashboard go to the Apps section and click on Create Application</li> 
+In your dashboard go to the Apps section and click on Create Application.</li> 
 </p>
 <p>
 <li>

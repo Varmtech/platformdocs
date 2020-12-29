@@ -4,8 +4,6 @@ title: Roles and Permissions
 ---
 
 
-
-
 When a new application is created, two default channel member roles with their set of permissions are automatically created: Owner and Participant.
 
 

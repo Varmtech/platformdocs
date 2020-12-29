@@ -49,22 +49,21 @@ module.exports = {
           {
             "Tutorials": [
               'role', 
-              'webhook'
+              'webhook',
+              'pushnot'
             ] 
           },
       {
         "Platform API": [
           'apigetst',
-          {
-            'Guides': [
-                'apichannels',
-                'apiusers',
-                'apifiles',
-                'apirlimits',
-                'apierr'
+          'apichannels',
+          'apiusers',
+          'apifiles',
+          'apirlimits',
+          'apierr'
                 // 'gettingstarted'
-            ]
-          }
+            
+          
         ],
       }
     ],

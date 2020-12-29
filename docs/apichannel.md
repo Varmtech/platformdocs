@@ -24,7 +24,7 @@ There are three types of channels:
 |Get Channel|GET|`https://{{apiUrl}}/v1/{{appId}}/channels/`|
 |Get Channels|GET|`https//{{apiUrl}}/v1/{{appId}}/channelD/channels`|
 |Get Channel Members|GET|`https://{{apiUrl}}/v1/{{appId}}/channels/`|
-|Get Channel Messages|GET|`https://{{apiUrl}}/v1/{{appId}}/channels/channelID/messages`|
+|Add Message in Channel|POST|`{{apiUrl}}/v1/{{appId}}/channels/101437428530810880/messages`|
 |Delete Channel|DELETE|`https://{{apiUrl}}/v1/{{appId}}/channels/channelID`|
 
 ### Channels Properties ###
@@ -62,7 +62,7 @@ POST https:/{{apiUrl}}/v1/channels-public
 |"metadata"|string|Additional data that can be stored in the channel|
 |"owner"|string|User name of the channel owner.|
 |"subject""|string|Specifies the subject of the channel.|
-|"uri"|string|The unique uri of the channel.|
+
 
 
 
@@ -151,6 +151,8 @@ DELETE https://{{apiUrl}}/v1/channels/ChannelID/users
 |Parameter |Type  | Description|
 --- | --- |: ---: |
 |"members"|string|User name of a member to remove.|
+|"username"|string||
+|role|string||
 </p>
 
 **<font size="4">Response </font>**
@@ -172,6 +174,9 @@ DELETE https://{{apiUrl}}/v1/channels/ChannelID/users
 
     ``
 </p>
+
+
+
 
 <p>
 
@@ -345,36 +350,59 @@ Use this API request to view all the members of a specific channel.
     "users": []
 }
 ```
+## Get Channel Blocked Members
 
-## Get Channel Messages	## 
+**<font size="4"> HTTP Request </font>**
 
-This API request retrieves all the messages from a specific channel.
+{{apiUrl}}/v1/{{appId}}/channels/channelID/blocked-users
 
-**<font size="4">HTTP Request </font>**
+**<font size="4">Response </font>**
 
-```
-GET https://{{apiUrl}}/v1/{{appId}}/channels/channelID/messages
-```
 
-**<font size="4">Respone</font>**
+## Add Message in channel ##
 
-```
-{    "count": 0,
-    "links": {
-        "current": url",
-        "previews": null,
-        "next": "url",
-        "first": "url",
-        "last": "url"
-    },
-    "messages": [
-        {
-            "id": "string",
-            "from": "string",
-            "body": "string"
-        },
-}
-```        
+**<font size="4">HTTP Request</font>**
+
+{{apiUrl}}/v1/{{appId}}/channels/channelID/messages
+
+**<font size="4">Parameters </font>**
+
+|Parameter|Type|Description|
+|---|---|---|
+|from|string|username of the person from whom the message is sent|
+|body|string|the message content|
+|message type|string|the type of the message|
+|metadata|string|message metadata|
+|attachements|string|attachement message|
+
+**<font size="4">Respone </font>**
+
+## Edit message in channel ##
+
+**<font size="4">HTTP Request</font>**
+
+{{apiUrl}}/v1/{{appId}}/channels/101437428530810880/messages/101449892471377920
+
+**<font size="4">Parameters </font>**
+
+|Parameter|Type|Description|
+|---|---|---|
+|from|string|the username of the person who sent the message|
+|body|string|the message body|
+
+## Delete Message From Channel ##
+
+**<font size="4">HTTP Request</font>**
+
+{{apiUrl}}/v1/{{appId}}/channels/101437428530810880/messages/101449892471377920
+
+**<font size="4">Parameters </font>**
+
+|Parameter|Type|Description|
+|---|---|---|
+|from|string|user name of the person whose message is going to be deleted|
+
+
 ## Delete Channel ##
 
 Permanetly deletes a channel.

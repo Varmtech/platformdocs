@@ -12,7 +12,8 @@ Chat API makes it comfortable to customize chat features and services from the s
 - Managing channels
 - Users 
 - Messages
-- Uploading, downloading and deleting files
+
+
 
 ## Base URL ##
 
@@ -31,12 +32,20 @@ The first part of the URL remains unchanged. Based on API request type, a specif
 
 Requests containing similar endpoints can perform different actions depending on the information and parameters included in the header.
 
+## Header ##
+
+Headers are parameters containing information associated with the API request.
+Sceyt API header must contain API key. API key helps the Sceyt server to authenticate your requests.
+
 
 ## Authentication ##
 
 
-The API requests must be authenticated by our server. To authenticate the request, you need to use an API token. You can find the API token in your dashboard…
-For each HTTPS request, you must include the API token in the authentication header.
+All API requests must be authenticated by Sceyt server using API keys. You can create an API Key from Sceyt Dashboard. To create an API key go to Dashboard > Settings > API Keys, press Create API Key, type the name and the IP address you are using and press generate, copy the API key.
+
+As mentioned above API keys must be included in each request header for authentication.
+
+>Note: The API is generated just once, make sure to save it and store it safely.
 
 ## URL encoding ##
 
