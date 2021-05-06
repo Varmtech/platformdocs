@@ -7,7 +7,8 @@ module.exports = {
             "Getting Started": [
               'doc2',
               'ioscreatechannel',
-              'doc4'
+              'doc4',
+              'example2222'
             ]
           },
           {
